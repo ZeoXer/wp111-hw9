@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd frontend && npm start",
-    "server": "cd backend && npm run server"
+    "server": "cd backend && npm run server",
+    "install:prod": "cd frontend && npm install --legacy-peer-deps --freeze-lockfile && cd ../backend && npm install --freeze-lockfile",
+    "build": "cd frontend && npm run build",
+    "deploy": "cd backend && npm run deploy"
   },
   "keywords": [],
   "author": "",

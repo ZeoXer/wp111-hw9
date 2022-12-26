@@ -6,7 +6,7 @@ dotenv.config();
 export default {
   connect: () => {
     mongoose
-      .connect("mongodb+srv://ZeoXer:hw6practice@cluster0.xlzpviw.mongodb.net/?retryWrites=true&w=majority", {
+      .connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       })
